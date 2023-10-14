@@ -17,7 +17,7 @@ const { actions, reducer } = createSlice({
       }),
       reducer: (draft, action) => {
         draft.newFirstName = action.payload.firstName;
-        draft.newLastNameastName = action.payload.lastName;
+        draft.newLastName = action.payload.lastName;
       },
     },
   },
@@ -25,7 +25,7 @@ const { actions, reducer } = createSlice({
   reset: {
     reducer: (draft) => {
       draft.newFirstName = "";
-      draft.newLastNameastName = "";
+      draft.newLastName = "";
     },
   },
 });
